@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TicketSplash : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *ticket;
 
 @end
 

@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A966A0619F63E07008B0DCD /* NewTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A966A0519F63E07008B0DCD /* NewTicket.m */; };
 		1ACACB8619F1385E0090C772 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACACB8519F1385E0090C772 /* main.m */; };
 		1ACACB8919F1385E0090C772 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACACB8819F1385E0090C772 /* AppDelegate.m */; };
-		1ACACB8C19F1385E0090C772 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACACB8B19F1385E0090C772 /* ViewController.m */; };
+		1ACACB8C19F1385E0090C772 /* TicketSplash.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACACB8B19F1385E0090C772 /* TicketSplash.m */; };
 		1ACACB8F19F1385E0090C772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ACACB8D19F1385E0090C772 /* Main.storyboard */; };
 		1ACACB9119F1385E0090C772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ACACB9019F1385E0090C772 /* Images.xcassets */; };
 		1ACACB9419F1385E0090C772 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACACB9219F1385E0090C772 /* LaunchScreen.xib */; };
-		1ACACBA019F1385E0090C772 /* TicketTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACACB9F19F1385E0090C772 /* TicketTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +27,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A966A0419F63E07008B0DCD /* NewTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTicket.h; sourceTree = "<group>"; };
+		1A966A0519F63E07008B0DCD /* NewTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTicket.m; sourceTree = "<group>"; };
 		1ACACB8019F1385E0090C772 /* Ticket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ACACB8419F1385E0090C772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1ACACB8519F1385E0090C772 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1ACACB8719F1385E0090C772 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1ACACB8819F1385E0090C772 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1ACACB8A19F1385E0090C772 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1ACACB8B19F1385E0090C772 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1ACACB8A19F1385E0090C772 /* TicketSplash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketSplash.h; sourceTree = "<group>"; };
+		1ACACB8B19F1385E0090C772 /* TicketSplash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketSplash.m; sourceTree = "<group>"; };
 		1ACACB8E19F1385E0090C772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ACACB9019F1385E0090C772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1ACACB9319F1385E0090C772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1ACACB9919F1385E0090C772 /* TicketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ACACB9E19F1385E0090C772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1ACACB9F19F1385E0090C772 /* TicketTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +82,12 @@
 		1ACACB8219F1385E0090C772 /* Ticket */ = {
 			isa = PBXGroup;
 			children = (
+				1A966A0419F63E07008B0DCD /* NewTicket.h */,
+				1A966A0519F63E07008B0DCD /* NewTicket.m */,
 				1ACACB8719F1385E0090C772 /* AppDelegate.h */,
 				1ACACB8819F1385E0090C772 /* AppDelegate.m */,
-				1ACACB8A19F1385E0090C772 /* ViewController.h */,
-				1ACACB8B19F1385E0090C772 /* ViewController.m */,
+				1ACACB8A19F1385E0090C772 /* TicketSplash.h */,
+				1ACACB8B19F1385E0090C772 /* TicketSplash.m */,
 				1ACACB8D19F1385E0090C772 /* Main.storyboard */,
 				1ACACB9019F1385E0090C772 /* Images.xcassets */,
 				1ACACB9219F1385E0090C772 /* LaunchScreen.xib */,
@@ -105,7 +108,6 @@
 		1ACACB9C19F1385E0090C772 /* TicketTests */ = {
 			isa = PBXGroup;
 			children = (
-				1ACACB9F19F1385E0090C772 /* TicketTests.m */,
 				1ACACB9D19F1385E0090C772 /* Supporting Files */,
 			);
 			path = TicketTests;
@@ -219,7 +221,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ACACB8C19F1385E0090C772 /* ViewController.m in Sources */,
+				1A966A0619F63E07008B0DCD /* NewTicket.m in Sources */,
+				1ACACB8C19F1385E0090C772 /* TicketSplash.m in Sources */,
 				1ACACB8919F1385E0090C772 /* AppDelegate.m in Sources */,
 				1ACACB8619F1385E0090C772 /* main.m in Sources */,
 			);
@@ -229,7 +232,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ACACBA019F1385E0090C772 /* TicketTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,9 +345,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Ticket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -353,9 +357,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Ticket/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -412,6 +418,7 @@
 				1ACACBA519F1385E0090C772 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1ACACBA619F1385E0090C772 /* Build configuration list for PBXNativeTarget "TicketTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				1ACACBA819F1385E0090C772 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

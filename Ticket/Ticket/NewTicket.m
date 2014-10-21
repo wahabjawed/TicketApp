@@ -1,27 +1,31 @@
 //
-//  ViewController.m
+//  NewTicket.m
 //  Ticket
 //
-//  Created by Abdul Wahab on 10/17/14.
+//  Created by Abdul Wahab on 10/21/14.
 //  Copyright (c) 2014 Abdul Wahab. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "NewTicket.h"
 
-@interface ViewController ()
+@interface NewTicket ()
 
 @end
 
-@implementation ViewController
+@implementation NewTicket
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 @end
+
+
+
