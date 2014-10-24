@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B77B68CF19FA3C7200170DE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68CE19FA3C7200170DE3 /* Foundation.framework */; };
+		B77B68D119FA3C7200170DE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */; };
+		B77B68D319FA3C7200170DE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68D219FA3C7200170DE3 /* UIKit.framework */; };
+		B77B68D919FA3C7200170DE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B77B68D719FA3C7200170DE3 /* InfoPlist.strings */; };
+		B77B68DB19FA3C7200170DE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B77B68DA19FA3C7200170DE3 /* main.m */; };
+		B77B68DF19FA3C7200170DE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B77B68DE19FA3C7200170DE3 /* AppDelegate.m */; };
+		B77B68E219FA3C7200170DE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B77B68E019FA3C7200170DE3 /* Main.storyboard */; };
+		B77B68E519FA3C7200170DE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B77B68E419FA3C7200170DE3 /* ViewController.m */; };
+		B77B68E719FA3C7200170DE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77B68E619FA3C7200170DE3 /* Images.xcassets */; };
+		B77B68EE19FA3C7200170DE3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68ED19FA3C7200170DE3 /* XCTest.framework */; };
+		B77B68EF19FA3C7200170DE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68CE19FA3C7200170DE3 /* Foundation.framework */; };
+		B77B68F019FA3C7200170DE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68D219FA3C7200170DE3 /* UIKit.framework */; };
+		B77B68F819FA3C7200170DE3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B77B68F619FA3C7200170DE3 /* InfoPlist.strings */; };
+		B77B68FA19FA3C7200170DE3 /* TicketAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77B68F919FA3C7200170DE3 /* TicketAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B77B68F119FA3C7200170DE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77B68C319FA3C7200170DE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B77B68CA19FA3C7200170DE3;
+			remoteInfo = TicketApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B77B68CB19FA3C7200170DE3 /* TicketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77B68CE19FA3C7200170DE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B77B68D219FA3C7200170DE3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B77B68D619FA3C7200170DE3 /* TicketApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicketApp-Info.plist"; sourceTree = "<group>"; };
+		B77B68D819FA3C7200170DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B77B68DA19FA3C7200170DE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B77B68DC19FA3C7200170DE3 /* TicketApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TicketApp-Prefix.pch"; sourceTree = "<group>"; };
+		B77B68DD19FA3C7200170DE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B77B68DE19FA3C7200170DE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B77B68E119FA3C7200170DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B77B68E319FA3C7200170DE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B77B68E419FA3C7200170DE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B77B68E619FA3C7200170DE3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B77B68EC19FA3C7200170DE3 /* TicketAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B77B68ED19FA3C7200170DE3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B77B68F519FA3C7200170DE3 /* TicketAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicketAppTests-Info.plist"; sourceTree = "<group>"; };
+		B77B68F719FA3C7200170DE3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B77B68F919FA3C7200170DE3 /* TicketAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B77B68C819FA3C7200170DE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77B68D119FA3C7200170DE3 /* CoreGraphics.framework in Frameworks */,
+				B77B68D319FA3C7200170DE3 /* UIKit.framework in Frameworks */,
+				B77B68CF19FA3C7200170DE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77B68E919FA3C7200170DE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77B68EE19FA3C7200170DE3 /* XCTest.framework in Frameworks */,
+				B77B68F019FA3C7200170DE3 /* UIKit.framework in Frameworks */,
+				B77B68EF19FA3C7200170DE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B77B68C219FA3C7200170DE3 = {
+			isa = PBXGroup;
+			children = (
+				B77B68D419FA3C7200170DE3 /* TicketApp */,
+				B77B68F319FA3C7200170DE3 /* TicketAppTests */,
+				B77B68CD19FA3C7200170DE3 /* Frameworks */,
+				B77B68CC19FA3C7200170DE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B77B68CC19FA3C7200170DE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B77B68CB19FA3C7200170DE3 /* TicketApp.app */,
+				B77B68EC19FA3C7200170DE3 /* TicketAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B77B68CD19FA3C7200170DE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B77B68CE19FA3C7200170DE3 /* Foundation.framework */,
+				B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */,
+				B77B68D219FA3C7200170DE3 /* UIKit.framework */,
+				B77B68ED19FA3C7200170DE3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B77B68D419FA3C7200170DE3 /* TicketApp */ = {
+			isa = PBXGroup;
+			children = (
+				B77B68DD19FA3C7200170DE3 /* AppDelegate.h */,
+				B77B68DE19FA3C7200170DE3 /* AppDelegate.m */,
+				B77B68E019FA3C7200170DE3 /* Main.storyboard */,
+				B77B68E319FA3C7200170DE3 /* ViewController.h */,
+				B77B68E419FA3C7200170DE3 /* ViewController.m */,
+				B77B68E619FA3C7200170DE3 /* Images.xcassets */,
+				B77B68D519FA3C7200170DE3 /* Supporting Files */,
+			);
+			path = TicketApp;
+			sourceTree = "<group>";
+		};
+		B77B68D519FA3C7200170DE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B77B68D619FA3C7200170DE3 /* TicketApp-Info.plist */,
+				B77B68D719FA3C7200170DE3 /* InfoPlist.strings */,
+				B77B68DA19FA3C7200170DE3 /* main.m */,
+				B77B68DC19FA3C7200170DE3 /* TicketApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B77B68F319FA3C7200170DE3 /* TicketAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B77B68F919FA3C7200170DE3 /* TicketAppTests.m */,
+				B77B68F419FA3C7200170DE3 /* Supporting Files */,
+			);
+			path = TicketAppTests;
+			sourceTree = "<group>";
+		};
+		B77B68F419FA3C7200170DE3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B77B68F519FA3C7200170DE3 /* TicketAppTests-Info.plist */,
+				B77B68F619FA3C7200170DE3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B77B68CA19FA3C7200170DE3 /* TicketApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B77B68FD19FA3C7200170DE3 /* Build configuration list for PBXNativeTarget "TicketApp" */;
+			buildPhases = (
+				B77B68C719FA3C7200170DE3 /* Sources */,
+				B77B68C819FA3C7200170DE3 /* Frameworks */,
+				B77B68C919FA3C7200170DE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicketApp;
+			productName = TicketApp;
+			productReference = B77B68CB19FA3C7200170DE3 /* TicketApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B77B68EB19FA3C7200170DE3 /* TicketAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B77B690019FA3C7200170DE3 /* Build configuration list for PBXNativeTarget "TicketAppTests" */;
+			buildPhases = (
+				B77B68E819FA3C7200170DE3 /* Sources */,
+				B77B68E919FA3C7200170DE3 /* Frameworks */,
+				B77B68EA19FA3C7200170DE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B77B68F219FA3C7200170DE3 /* PBXTargetDependency */,
+			);
+			name = TicketAppTests;
+			productName = TicketAppTests;
+			productReference = B77B68EC19FA3C7200170DE3 /* TicketAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B77B68C319FA3C7200170DE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Avialdo;
+				TargetAttributes = {
+					B77B68EB19FA3C7200170DE3 = {
+						TestTargetID = B77B68CA19FA3C7200170DE3;
+					};
+				};
+			};
+			buildConfigurationList = B77B68C619FA3C7200170DE3 /* Build configuration list for PBXProject "TicketApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B77B68C219FA3C7200170DE3;
+			productRefGroup = B77B68CC19FA3C7200170DE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B77B68CA19FA3C7200170DE3 /* TicketApp */,
+				B77B68EB19FA3C7200170DE3 /* TicketAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B77B68C919FA3C7200170DE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77B68E719FA3C7200170DE3 /* Images.xcassets in Resources */,
+				B77B68D919FA3C7200170DE3 /* InfoPlist.strings in Resources */,
+				B77B68E219FA3C7200170DE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77B68EA19FA3C7200170DE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77B68F819FA3C7200170DE3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B77B68C719FA3C7200170DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77B68E519FA3C7200170DE3 /* ViewController.m in Sources */,
+				B77B68DF19FA3C7200170DE3 /* AppDelegate.m in Sources */,
+				B77B68DB19FA3C7200170DE3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B77B68E819FA3C7200170DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77B68FA19FA3C7200170DE3 /* TicketAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B77B68F219FA3C7200170DE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B77B68CA19FA3C7200170DE3 /* TicketApp */;
+			targetProxy = B77B68F119FA3C7200170DE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B77B68D719FA3C7200170DE3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B77B68D819FA3C7200170DE3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B77B68E019FA3C7200170DE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B77B68E119FA3C7200170DE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B77B68F619FA3C7200170DE3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B77B68F719FA3C7200170DE3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B77B68FB19FA3C7200170DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B77B68FC19FA3C7200170DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B77B68FE19FA3C7200170DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketApp/TicketApp-Prefix.pch";
+				INFOPLIST_FILE = "TicketApp/TicketApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B77B68FF19FA3C7200170DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketApp/TicketApp-Prefix.pch";
+				INFOPLIST_FILE = "TicketApp/TicketApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B77B690119FA3C7200170DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TicketApp.app/TicketApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketApp/TicketApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TicketAppTests/TicketAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B77B690219FA3C7200170DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TicketApp.app/TicketApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TicketApp/TicketApp-Prefix.pch";
+				INFOPLIST_FILE = "TicketAppTests/TicketAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B77B68C619FA3C7200170DE3 /* Build configuration list for PBXProject "TicketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B77B68FB19FA3C7200170DE3 /* Debug */,
+				B77B68FC19FA3C7200170DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B77B68FD19FA3C7200170DE3 /* Build configuration list for PBXNativeTarget "TicketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B77B68FE19FA3C7200170DE3 /* Debug */,
+				B77B68FF19FA3C7200170DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B77B690019FA3C7200170DE3 /* Build configuration list for PBXNativeTarget "TicketAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B77B690119FA3C7200170DE3 /* Debug */,
+				B77B690219FA3C7200170DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B77B68C319FA3C7200170DE3 /* Project object */;
+}

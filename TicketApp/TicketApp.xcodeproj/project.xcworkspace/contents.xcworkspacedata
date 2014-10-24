@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Ticket.xcodeproj">
+      location = "self:TicketApp.xcodeproj">
    </FileRef>
 </Workspace>
