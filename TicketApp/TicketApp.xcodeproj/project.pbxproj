@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B74E5BF719FE7FB70076F56D /* NewTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = B74E5BF619FE7FB70076F56D /* NewTicket.m */; };
+		B74E5BF919FE91D10076F56D /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B74E5BF819FE91D10076F56D /* libstdc++.6.0.9.dylib */; };
+		B74E5BFB19FE9ACA0076F56D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74E5BFA19FE9ACA0076F56D /* CoreImage.framework */; };
+		B74E5C0519FEA15E0076F56D /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74E5C0419FEA15E0076F56D /* TesseractOCR.framework */; };
+		B74E5C0719FEA2C90076F56D /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = B74E5C0619FEA2C90076F56D /* tessdata */; };
+		B74E5C0919FEA3890076F56D /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B74E5C0819FEA3890076F56D /* image_sample.jpg */; };
+		B74E5C0B19FEA6780076F56D /* customer_receipt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B74E5C0A19FEA6780076F56D /* customer_receipt.jpg */; };
+		B74E5C0D19FEAA2D0076F56D /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B74E5C0C19FEAA2D0076F56D /* img.jpg */; };
 		B77B68CF19FA3C7200170DE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68CE19FA3C7200170DE3 /* Foundation.framework */; };
 		B77B68D119FA3C7200170DE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */; };
 		B77B68D319FA3C7200170DE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68D219FA3C7200170DE3 /* UIKit.framework */; };
@@ -37,6 +44,13 @@
 /* Begin PBXFileReference section */
 		B74E5BF519FE7FB70076F56D /* NewTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTicket.h; sourceTree = "<group>"; };
 		B74E5BF619FE7FB70076F56D /* NewTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTicket.m; sourceTree = "<group>"; };
+		B74E5BF819FE91D10076F56D /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
+		B74E5BFA19FE9ACA0076F56D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		B74E5C0419FEA15E0076F56D /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		B74E5C0619FEA2C90076F56D /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = ../tessdata; sourceTree = "<group>"; };
+		B74E5C0819FEA3890076F56D /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
+		B74E5C0A19FEA6780076F56D /* customer_receipt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = customer_receipt.jpg; sourceTree = "<group>"; };
+		B74E5C0C19FEAA2D0076F56D /* img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpg; sourceTree = "<group>"; };
 		B77B68CB19FA3C7200170DE3 /* TicketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77B68CE19FA3C7200170DE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +77,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B74E5BFB19FE9ACA0076F56D /* CoreImage.framework in Frameworks */,
+				B74E5BF919FE91D10076F56D /* libstdc++.6.0.9.dylib in Frameworks */,
 				B77B68D119FA3C7200170DE3 /* CoreGraphics.framework in Frameworks */,
 				B77B68D319FA3C7200170DE3 /* UIKit.framework in Frameworks */,
+				B74E5C0519FEA15E0076F56D /* TesseractOCR.framework in Frameworks */,
 				B77B68CF19FA3C7200170DE3 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +121,9 @@
 		B77B68CD19FA3C7200170DE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B74E5C0419FEA15E0076F56D /* TesseractOCR.framework */,
+				B74E5BFA19FE9ACA0076F56D /* CoreImage.framework */,
+				B74E5BF819FE91D10076F56D /* libstdc++.6.0.9.dylib */,
 				B77B68CE19FA3C7200170DE3 /* Foundation.framework */,
 				B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */,
 				B77B68D219FA3C7200170DE3 /* UIKit.framework */,
@@ -115,6 +135,7 @@
 		B77B68D419FA3C7200170DE3 /* TicketApp */ = {
 			isa = PBXGroup;
 			children = (
+				B74E5C0619FEA2C90076F56D /* tessdata */,
 				B74E5BF519FE7FB70076F56D /* NewTicket.h */,
 				B74E5BF619FE7FB70076F56D /* NewTicket.m */,
 				B77B68DD19FA3C7200170DE3 /* AppDelegate.h */,
@@ -131,6 +152,9 @@
 		B77B68D519FA3C7200170DE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B74E5C0C19FEAA2D0076F56D /* img.jpg */,
+				B74E5C0A19FEA6780076F56D /* customer_receipt.jpg */,
+				B74E5C0819FEA3890076F56D /* image_sample.jpg */,
 				B77B68D619FA3C7200170DE3 /* TicketApp-Info.plist */,
 				B77B68D719FA3C7200170DE3 /* InfoPlist.strings */,
 				B77B68DA19FA3C7200170DE3 /* main.m */,
@@ -241,8 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B77B68E719FA3C7200170DE3 /* Images.xcassets in Resources */,
+				B74E5C0919FEA3890076F56D /* image_sample.jpg in Resources */,
+				B74E5C0719FEA2C90076F56D /* tessdata in Resources */,
 				B77B68D919FA3C7200170DE3 /* InfoPlist.strings in Resources */,
+				B74E5C0D19FEAA2D0076F56D /* img.jpg in Resources */,
 				B77B68E219FA3C7200170DE3 /* Main.storyboard in Resources */,
+				B74E5C0B19FEA6780076F56D /* customer_receipt.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,11 +417,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TicketApp/TicketApp-Prefix.pch";
 				INFOPLIST_FILE = "TicketApp/TicketApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -404,11 +438,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TicketApp/TicketApp-Prefix.pch";
 				INFOPLIST_FILE = "TicketApp/TicketApp-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-lstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

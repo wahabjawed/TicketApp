@@ -6,8 +6,9 @@
 //  Copyright (c) 2014 Avialdo. All rights reserved.
 //
 
+#import <TesseractOCR/TesseractOCR.h>
 #import <UIKit/UIKit.h>
 
-@interface NewTicket : UIViewController
+@interface NewTicket : UIViewController <TesseractDelegate>
 
 @end

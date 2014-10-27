@@ -8,6 +8,7 @@
 
 #import "NewTicket.h"
 
+
 @interface NewTicket ()
 
 @property (weak, nonatomic) IBOutlet UILabel *PhotoLabel;
@@ -69,6 +70,26 @@
    // self.imageView.layer.masksToBounds = YES;
   //  self.imageView.layer.borderWidth = 0;
     
+    
+    Tesseract* tesseract = [[Tesseract alloc] initWithLanguage:@"eng+ita"];
+    tesseract.delegate = self;
+    
+   // [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"]; //limit search
+    [tesseract setImage:[[UIImage imageNamed:@"customer_receipt.jpg"] blackAndWhite]]; //image to check
+    //[tesseract setRect:CGRectMake(20, 20, 300, 100)]; //optional: set the rectangle to recognize text in the image
+    [tesseract recognize];
+    
+    NSLog(@"%@", [tesseract recognizedText]);
+    
+    tesseract = nil; //deallocate and free all memory
+    
+}
+
+
+- (BOOL)shouldCancelImageRecognitionForTesseract:(Tesseract*)tesseract
+{
+    NSLog(@"progress: %d", tesseract.progress);
+    return NO;  // return YES, if you need to interrupt tesseract before it finishes
 }
 
 
