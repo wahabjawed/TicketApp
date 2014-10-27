@@ -6,18 +6,22 @@
 //  Copyright (c) 2014 Avialdo. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "Ticket.h"
 
-@interface ViewController ()
+@interface Ticket ()
+
+@property (weak, nonatomic) IBOutlet UIButton *roundButton;
+
 
 @end
 
-@implementation ViewController
+@implementation Ticket
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    self.roundButton.layer.cornerRadius=20;
 }
 
 - (void)didReceiveMemoryWarning
