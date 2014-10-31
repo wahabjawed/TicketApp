@@ -16,6 +16,7 @@
     
    // [[UINavigationBar appearance]setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
    // [[UINavigationBar appearance]setBarTintColor:[UIColor blackColor]];
+
     return YES;
 }
 							

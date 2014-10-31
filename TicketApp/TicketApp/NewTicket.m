@@ -26,8 +26,9 @@
     // Do any additional setup after loading the view.
     self.PhotoLabel.lineBreakMode = NSLineBreakByWordWrapping;
     self.PhotoLabel.numberOfLines = 0;
+    self.roundButton.layer.cornerRadius=20;
     
-      self.roundButton.layer.cornerRadius=20;
+    self.navigationController.navigationBar.topItem.title = @"";
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,13 +76,14 @@
     tesseract.delegate = self;
     
    // [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"]; //limit search
-    [tesseract setImage:[[UIImage imageNamed:@"customer_receipt.jpg"] blackAndWhite]]; //image to check
+    [tesseract setImage:[[UIImage imageNamed:@"image_sample.jpg"] blackAndWhite]]; //image to check
     //[tesseract setRect:CGRectMake(20, 20, 300, 100)]; //optional: set the rectangle to recognize text in the image
     [tesseract recognize];
     
     NSLog(@"%@", [tesseract recognizedText]);
     
     tesseract = nil; //deallocate and free all memory
+    [self performSegueWithIdentifier:@"go" sender:self];
     
 }
 

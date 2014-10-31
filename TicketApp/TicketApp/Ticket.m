@@ -22,6 +22,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.roundButton.layer.cornerRadius=20;
+    
+  //  self.navigationController.navigationBar.topItem.title = @"";
 }
 
 - (void)didReceiveMemoryWarning

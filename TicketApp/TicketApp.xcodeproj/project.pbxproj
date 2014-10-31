@@ -15,6 +15,8 @@
 		B74E5C0919FEA3890076F56D /* image_sample.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B74E5C0819FEA3890076F56D /* image_sample.jpg */; };
 		B74E5C0B19FEA6780076F56D /* customer_receipt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B74E5C0A19FEA6780076F56D /* customer_receipt.jpg */; };
 		B74E5C0D19FEAA2D0076F56D /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B74E5C0C19FEAA2D0076F56D /* img.jpg */; };
+		B7537D7A19FFAE6400A73C4A /* SelectOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B7537D7919FFAE6400A73C4A /* SelectOption.m */; };
+		B7537D7D19FFB53000A73C4A /* ClaimReason.m in Sources */ = {isa = PBXBuildFile; fileRef = B7537D7C19FFB53000A73C4A /* ClaimReason.m */; };
 		B77B68CF19FA3C7200170DE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68CE19FA3C7200170DE3 /* Foundation.framework */; };
 		B77B68D119FA3C7200170DE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */; };
 		B77B68D319FA3C7200170DE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68D219FA3C7200170DE3 /* UIKit.framework */; };
@@ -51,6 +53,10 @@
 		B74E5C0819FEA3890076F56D /* image_sample.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_sample.jpg; sourceTree = "<group>"; };
 		B74E5C0A19FEA6780076F56D /* customer_receipt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = customer_receipt.jpg; sourceTree = "<group>"; };
 		B74E5C0C19FEAA2D0076F56D /* img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img.jpg; sourceTree = "<group>"; };
+		B7537D7819FFAE6400A73C4A /* SelectOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectOption.h; sourceTree = "<group>"; };
+		B7537D7919FFAE6400A73C4A /* SelectOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectOption.m; sourceTree = "<group>"; };
+		B7537D7B19FFB53000A73C4A /* ClaimReason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClaimReason.h; path = ../ClaimReason.h; sourceTree = "<group>"; };
+		B7537D7C19FFB53000A73C4A /* ClaimReason.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClaimReason.m; path = ../ClaimReason.m; sourceTree = "<group>"; };
 		B77B68CB19FA3C7200170DE3 /* TicketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77B68CE19FA3C7200170DE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -135,6 +141,10 @@
 		B77B68D419FA3C7200170DE3 /* TicketApp */ = {
 			isa = PBXGroup;
 			children = (
+				B7537D7B19FFB53000A73C4A /* ClaimReason.h */,
+				B7537D7C19FFB53000A73C4A /* ClaimReason.m */,
+				B7537D7819FFAE6400A73C4A /* SelectOption.h */,
+				B7537D7919FFAE6400A73C4A /* SelectOption.m */,
 				B74E5C0619FEA2C90076F56D /* tessdata */,
 				B74E5BF519FE7FB70076F56D /* NewTicket.h */,
 				B74E5BF619FE7FB70076F56D /* NewTicket.m */,
@@ -289,9 +299,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7537D7A19FFAE6400A73C4A /* SelectOption.m in Sources */,
 				B74E5BF719FE7FB70076F56D /* NewTicket.m in Sources */,
 				B77B68E519FA3C7200170DE3 /* Ticket.m in Sources */,
 				B77B68DF19FA3C7200170DE3 /* AppDelegate.m in Sources */,
+				B7537D7D19FFB53000A73C4A /* ClaimReason.m in Sources */,
 				B77B68DB19FA3C7200170DE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
