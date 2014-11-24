@@ -17,6 +17,8 @@
 		B74E5C0D19FEAA2D0076F56D /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B74E5C0C19FEAA2D0076F56D /* img.jpg */; };
 		B7537D7A19FFAE6400A73C4A /* SelectOption.m in Sources */ = {isa = PBXBuildFile; fileRef = B7537D7919FFAE6400A73C4A /* SelectOption.m */; };
 		B7537D7D19FFB53000A73C4A /* ClaimReason.m in Sources */ = {isa = PBXBuildFile; fileRef = B7537D7C19FFB53000A73C4A /* ClaimReason.m */; };
+		B7554E9F1A07791000745748 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7554E9E1A07791000745748 /* SWRevealViewController.m */; };
+		B7554EA21A0779BB00745748 /* SidebarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7554EA11A0779BB00745748 /* SidebarViewController.m */; };
 		B77B68CF19FA3C7200170DE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68CE19FA3C7200170DE3 /* Foundation.framework */; };
 		B77B68D119FA3C7200170DE3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */; };
 		B77B68D319FA3C7200170DE3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B68D219FA3C7200170DE3 /* UIKit.framework */; };
@@ -57,6 +59,10 @@
 		B7537D7919FFAE6400A73C4A /* SelectOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectOption.m; sourceTree = "<group>"; };
 		B7537D7B19FFB53000A73C4A /* ClaimReason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClaimReason.h; path = ../ClaimReason.h; sourceTree = "<group>"; };
 		B7537D7C19FFB53000A73C4A /* ClaimReason.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClaimReason.m; path = ../ClaimReason.m; sourceTree = "<group>"; };
+		B7554E9D1A07791000745748 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		B7554E9E1A07791000745748 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		B7554EA01A0779BB00745748 /* SidebarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SidebarViewController.h; path = ../SidebarViewController.h; sourceTree = "<group>"; };
+		B7554EA11A0779BB00745748 /* SidebarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SidebarViewController.m; path = ../SidebarViewController.m; sourceTree = "<group>"; };
 		B77B68CB19FA3C7200170DE3 /* TicketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77B68CE19FA3C7200170DE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B77B68D019FA3C7200170DE3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -141,6 +147,8 @@
 		B77B68D419FA3C7200170DE3 /* TicketApp */ = {
 			isa = PBXGroup;
 			children = (
+				B7554EA01A0779BB00745748 /* SidebarViewController.h */,
+				B7554EA11A0779BB00745748 /* SidebarViewController.m */,
 				B7537D7B19FFB53000A73C4A /* ClaimReason.h */,
 				B7537D7C19FFB53000A73C4A /* ClaimReason.m */,
 				B7537D7819FFAE6400A73C4A /* SelectOption.h */,
@@ -155,6 +163,8 @@
 				B77B68E419FA3C7200170DE3 /* Ticket.m */,
 				B77B68E619FA3C7200170DE3 /* Images.xcassets */,
 				B77B68D519FA3C7200170DE3 /* Supporting Files */,
+				B7554E9D1A07791000745748 /* SWRevealViewController.h */,
+				B7554E9E1A07791000745748 /* SWRevealViewController.m */,
 			);
 			path = TicketApp;
 			sourceTree = "<group>";
@@ -299,8 +309,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7554E9F1A07791000745748 /* SWRevealViewController.m in Sources */,
 				B7537D7A19FFAE6400A73C4A /* SelectOption.m in Sources */,
 				B74E5BF719FE7FB70076F56D /* NewTicket.m in Sources */,
+				B7554EA21A0779BB00745748 /* SidebarViewController.m in Sources */,
 				B77B68E519FA3C7200170DE3 /* Ticket.m in Sources */,
 				B77B68DF19FA3C7200170DE3 /* AppDelegate.m in Sources */,
 				B7537D7D19FFB53000A73C4A /* ClaimReason.m in Sources */,

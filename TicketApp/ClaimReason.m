@@ -19,6 +19,9 @@
 
 @implementation ClaimReason
 
+UIActivityIndicatorView *progress;
+UIView *_hudView;
+UILabel *_captionLabel;
 
 UIPickerView *myPickerView;
 NSArray *pickerArray;
@@ -32,8 +35,30 @@ NSArray *pickerArray;
         [alert show];
         
     }else{
-           }
+        
+        _hudView = [[UIView alloc] initWithFrame:CGRectMake(75, 155, 170, 170)];
+        _hudView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+        _hudView.clipsToBounds = YES;
+        _hudView.layer.cornerRadius = 10.0;
+        
+        progress = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        progress.frame = CGRectMake(65, 40, progress.bounds.size.width, progress.bounds.size.height);
+        [_hudView addSubview:progress];
+        [progress startAnimating];
+        
+        _captionLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 115, 130, 22)];
+        _captionLabel.backgroundColor = [UIColor clearColor];
+        _captionLabel.textColor = [UIColor whiteColor];
+        _captionLabel.adjustsFontSizeToFitWidth = YES;
+        _captionLabel.textAlignment = NSTextAlignmentCenter;
+        _captionLabel.text = @"Submitting your claim...";
+        [_hudView addSubview:_captionLabel];
+        
+        [self.view addSubview:_hudView];
+    }
 }
+
+
 
 - (void)viewDidLoad
 {
@@ -44,6 +69,14 @@ NSArray *pickerArray;
     self.explainLabel.numberOfLines = 0;
     [self addPickerView];
     
+    
+    
+    
+  //  [self.view removeFromSuperview:_hudView];
+    
+    //[self.view addSubview:progress];
+   // [progress bringSubviewToFront:self.view];
+    //[progress startAnimating];
     
 }
 
@@ -60,7 +93,7 @@ NSArray *pickerArray;
     myPickerView.showsSelectionIndicator = YES;
     UIBarButtonItem *doneButton = [[UIBarButtonItem alloc]
                                    initWithTitle:@"Done" style:UIBarButtonItemStyleBordered
-                                   target:self action:@selector(changeDateFromLabel:)];
+                                   target:self action:@selector(hidePicker:)];
     UIToolbar *toolBar = [[UIToolbar alloc]initWithFrame:
                           CGRectMake(0, self.view.frame.size.height-
                                      myPickerView.frame.size.height-50, 320, 50)];
@@ -74,9 +107,11 @@ NSArray *pickerArray;
 }
 
 #pragma mark - Text field delegates
--(void)changeDateFromLabel:(id)sender
+-(void)hidePicker:(id)sender
 {
-    [myPickerView resignFirstResponder];
+    [myPickerView removeFromSuperview];
+    
+   // [myPickerView resignFirstResponder];
 }
 #pragma mark - Picker View Data source
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
