@@ -78,8 +78,8 @@
     
     //self.imageView.layer.cornerRadius= self.imageView.frame.size.height/2;
     //layer.cornerRadius = cell.yourImageView.frame.size.height /2;
-   // self.imageView.layer.masksToBounds = YES;
-  //  self.imageView.layer.borderWidth = 0;
+    //self.imageView.layer.masksToBounds = YES;
+    //self.imageView.layer.borderWidth = 0;
     
     
     Tesseract* tesseract = [[Tesseract alloc] initWithLanguage:@"eng+ita"];
