@@ -7,18 +7,16 @@
 //
 
 #import "NewTicket.h"
-
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @interface NewTicket ()
 
 @property (weak, nonatomic) IBOutlet UILabel *PhotoLabel;
-
 @property (weak, nonatomic) IBOutlet UIButton *roundButton;
+
 @end
 
 @implementation NewTicket
-
-
 
 - (void)viewDidLoad
 {
@@ -37,7 +35,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (IBAction)goButton:(id)sender {
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
@@ -53,11 +50,21 @@
 
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
+    // Firstly get the picked image's file URL.
     NSURL *imageFileURL = [info objectForKey:UIImagePickerControllerReferenceURL];
     
     // Then get the file name.
     NSString *imageName = [imageFileURL lastPathComponent];
     NSLog(@"image name is %@", imageName);
+    
+    
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    __block UIImage *returnValue = nil;
+    [library assetForURL:imageFileURL resultBlock:^(ALAsset *asset) {
+        returnValue = [UIImage imageWithCGImage:[[asset defaultRepresentation] fullResolutionImage]];
+    } failureBlock:^(NSError *error) {
+        NSLog(@"error : %@", error);
+    }];
     
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
