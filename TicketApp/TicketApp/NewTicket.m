@@ -50,16 +50,26 @@
     [actionSheet showInView:self.view];
 }
 
+
+-(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    NSURL *imageFileURL = [info objectForKey:UIImagePickerControllerReferenceURL];
+    
+    // Then get the file name.
+    NSString *imageName = [imageFileURL lastPathComponent];
+    NSLog(@"image name is %@", imageName);
+    
+}
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
-    
     
     if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Camera"]) {
         picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     }
     else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Photos"]) {
         picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
     }
     else{
         return;
@@ -76,6 +86,7 @@
     tesseract.delegate = self;
     
    // [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"]; //limit search
+    
     [tesseract setImage:[[UIImage imageNamed:@"image_sample.jpg"] blackAndWhite]]; //image to check
     //[tesseract setRect:CGRectMake(20, 20, 300, 100)]; //optional: set the rectangle to recognize text in the image
     [tesseract recognize];

@@ -9,6 +9,6 @@
 #import <TesseractOCR/TesseractOCR.h>
 #import <UIKit/UIKit.h>
 
-@interface NewTicket : UIViewController <TesseractDelegate>
+@interface NewTicket : UIViewController <TesseractDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 @end

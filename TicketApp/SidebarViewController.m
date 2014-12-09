@@ -13,7 +13,6 @@
 
 @interface SidebarViewController ()
 
-
 @end
 
 @implementation SidebarViewController{
