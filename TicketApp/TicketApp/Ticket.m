@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 @property (weak, nonatomic) IBOutlet UIButton *roundButton;
 
-
 @end
 
 @implementation Ticket
