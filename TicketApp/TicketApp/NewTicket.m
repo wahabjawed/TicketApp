@@ -7,16 +7,18 @@
 //
 
 #import "NewTicket.h"
-#import <AssetsLibrary/AssetsLibrary.h>
+
 
 @interface NewTicket ()
 
 @property (weak, nonatomic) IBOutlet UILabel *PhotoLabel;
-@property (weak, nonatomic) IBOutlet UIButton *roundButton;
 
+@property (weak, nonatomic) IBOutlet UIButton *roundButton;
 @end
 
 @implementation NewTicket
+
+
 
 - (void)viewDidLoad
 {
@@ -35,6 +37,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+
 - (IBAction)goButton:(id)sender {
     
     UIActionSheet *actionSheet = [[UIActionSheet alloc]
@@ -50,21 +53,11 @@
 
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    // Firstly get the picked image's file URL.
     NSURL *imageFileURL = [info objectForKey:UIImagePickerControllerReferenceURL];
     
     // Then get the file name.
     NSString *imageName = [imageFileURL lastPathComponent];
     NSLog(@"image name is %@", imageName);
-    
-    
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-    __block UIImage *returnValue = nil;
-    [library assetForURL:imageFileURL resultBlock:^(ALAsset *asset) {
-        returnValue = [UIImage imageWithCGImage:[[asset defaultRepresentation] fullResolutionImage]];
-    } failureBlock:^(NSError *error) {
-        NSLog(@"error : %@", error);
-    }];
     
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -85,8 +78,8 @@
     
     //self.imageView.layer.cornerRadius= self.imageView.frame.size.height/2;
     //layer.cornerRadius = cell.yourImageView.frame.size.height /2;
-    //self.imageView.layer.masksToBounds = YES;
-    //self.imageView.layer.borderWidth = 0;
+   // self.imageView.layer.masksToBounds = YES;
+  //  self.imageView.layer.borderWidth = 0;
     
     
     Tesseract* tesseract = [[Tesseract alloc] initWithLanguage:@"eng+ita"];

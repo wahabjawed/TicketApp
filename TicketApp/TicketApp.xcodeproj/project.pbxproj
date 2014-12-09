@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B70423C41A3730DD00168DE7 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70423C31A3730DD00168DE7 /* AssetsLibrary.framework */; };
 		B74E5BF719FE7FB70076F56D /* NewTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = B74E5BF619FE7FB70076F56D /* NewTicket.m */; };
 		B74E5BF919FE91D10076F56D /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B74E5BF819FE91D10076F56D /* libstdc++.6.0.9.dylib */; };
 		B74E5BFB19FE9ACA0076F56D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74E5BFA19FE9ACA0076F56D /* CoreImage.framework */; };
@@ -47,7 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B70423C31A3730DD00168DE7 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		B74E5BF519FE7FB70076F56D /* NewTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTicket.h; sourceTree = "<group>"; };
 		B74E5BF619FE7FB70076F56D /* NewTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTicket.m; sourceTree = "<group>"; };
 		B74E5BF819FE91D10076F56D /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
@@ -91,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70423C41A3730DD00168DE7 /* AssetsLibrary.framework in Frameworks */,
 				B74E5BFB19FE9ACA0076F56D /* CoreImage.framework in Frameworks */,
 				B74E5BF919FE91D10076F56D /* libstdc++.6.0.9.dylib in Frameworks */,
 				B77B68D119FA3C7200170DE3 /* CoreGraphics.framework in Frameworks */,
@@ -136,7 +133,6 @@
 		B77B68CD19FA3C7200170DE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B70423C31A3730DD00168DE7 /* AssetsLibrary.framework */,
 				B74E5C0419FEA15E0076F56D /* TesseractOCR.framework */,
 				B74E5BFA19FE9ACA0076F56D /* CoreImage.framework */,
 				B74E5BF819FE91D10076F56D /* libstdc++.6.0.9.dylib */,
@@ -253,7 +249,6 @@
 				ORGANIZATIONNAME = Avialdo;
 				TargetAttributes = {
 					B77B68CA19FA3C7200170DE3 = {
-						DevelopmentTeam = QC2G57K64X;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 0;
