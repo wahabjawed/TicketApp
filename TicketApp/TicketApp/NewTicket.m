@@ -7,6 +7,7 @@
 //
 
 #import "NewTicket.h"
+#import <AssetsLibrary/AssetsLibrary.h>
 
 
 @interface NewTicket ()
@@ -17,7 +18,7 @@
 @end
 
 @implementation NewTicket
-
+NSString *imageName;
 
 
 - (void)viewDidLoad
@@ -53,11 +54,22 @@
 
 -(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    NSURL *imageFileURL = [info objectForKey:UIImagePickerControllerReferenceURL];
+    NSURL *refURL = [info valueForKey:UIImagePickerControllerReferenceURL];
     
-    // Then get the file name.
-    NSString *imageName = [imageFileURL lastPathComponent];
-    NSLog(@"image name is %@", imageName);
+    // define the block to call when we get the asset based on the url (below)
+    ALAssetsLibraryAssetForURLResultBlock resultblock = ^(ALAsset *imageAsset)
+    {
+        ALAssetRepresentation *imageRep = [imageAsset defaultRepresentation];
+        NSLog(@"[imageRep filename] : %@", [imageRep filename]);
+        imageName = [imageRep filename];
+        NSLog(@"The image name is: %@", imageName);
+    };
+    
+    // get the asset library and fetch the asset based on the ref url (pass in block above)
+    ALAssetsLibrary* assetslibrary = [[ALAssetsLibrary alloc] init];
+    [assetslibrary assetForURL:refURL resultBlock:resultblock failureBlock:nil];
+    
+    [self TesseractWork];
     
 }
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -81,21 +93,27 @@
    // self.imageView.layer.masksToBounds = YES;
   //  self.imageView.layer.borderWidth = 0;
     
-    
+
+}
+-(void)TesseractWork{
     Tesseract* tesseract = [[Tesseract alloc] initWithLanguage:@"eng+ita"];
     tesseract.delegate = self;
     
-   // [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"]; //limit search
+    // [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"]; //limit search
     
-    [tesseract setImage:[[UIImage imageNamed:@"image_sample.jpg"] blackAndWhite]]; //image to check
+    [tesseract setImage:[[UIImage imageNamed:@"tt.jpg"] blackAndWhite]]; //image to check
     //[tesseract setRect:CGRectMake(20, 20, 300, 100)]; //optional: set the rectangle to recognize text in the image
     [tesseract recognize];
     
     NSLog(@"%@", [tesseract recognizedText]);
     
+    NSString * text = [tesseract recognizedText];
+   
+    
+
+    
     tesseract = nil; //deallocate and free all memory
     [self performSegueWithIdentifier:@"go" sender:self];
-    
 }
 
 
