@@ -36,25 +36,30 @@ NSArray *pickerArray;
         
     }else{
         
-        _hudView = [[UIView alloc] initWithFrame:CGRectMake(75, 155, 170, 170)];
-        _hudView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
-        _hudView.clipsToBounds = YES;
-        _hudView.layer.cornerRadius = 10.0;
+//        _hudView = [[UIView alloc] initWithFrame:CGRectMake(75, 155, 170, 100)];
+//        _hudView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+//        _hudView.clipsToBounds = YES;
+//        _hudView.layer.cornerRadius = 10.0;
         
         progress = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-        progress.frame = CGRectMake(65, 40, progress.bounds.size.width, progress.bounds.size.height);
-        [_hudView addSubview:progress];
-        [progress startAnimating];
+        progress.frame = CGRectMake(100, 200, 100, 150);
+        [progress setBackgroundColor:[UIColor grayColor]];
+        [progress setColor:[UIColor whiteColor]];
+        //[_hudView addSubview:progress];
         
-        _captionLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 115, 130, 22)];
+        
+        _captionLabel = [[UILabel alloc] initWithFrame:CGRectMake(20, 100, 130, 22)];
         _captionLabel.backgroundColor = [UIColor clearColor];
         _captionLabel.textColor = [UIColor whiteColor];
         _captionLabel.adjustsFontSizeToFitWidth = YES;
         _captionLabel.textAlignment = NSTextAlignmentCenter;
         _captionLabel.text = @"Submitting your claim...";
-        [_hudView addSubview:_captionLabel];
+        [progress addSubview:_captionLabel];
+        [self.view addSubview:progress];
+        [progress startAnimating];
+        //[_hudView addSubview:_captionLabel];
         
-        [self.view addSubview:_hudView];
+        //[self.view addSubview:_hudView];
     }
 }
 

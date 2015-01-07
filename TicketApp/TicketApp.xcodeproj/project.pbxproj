@@ -7,7 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		B74306231A4721B10071271D /* signin.m in Sources */ = {isa = PBXBuildFile; fileRef = B74306221A4721B10071271D /* signin.m */; };
+=======
+		191F4BCF1A386C6500166A7C /* ticket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191F4BCE1A386C6500166A7C /* ticket.jpg */; };
+		191F4BD11A386D6C00166A7C /* tt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 191F4BD01A386D6C00166A7C /* tt.jpg */; };
+		19D99F3A1A374B9C00E31ADC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D99F391A374B9C00E31ADC /* AssetsLibrary.framework */; };
+>>>>>>> FETCH_HEAD
 		B74E5BF719FE7FB70076F56D /* NewTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = B74E5BF619FE7FB70076F56D /* NewTicket.m */; };
 		B74E5BF919FE91D10076F56D /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B74E5BF819FE91D10076F56D /* libstdc++.6.0.9.dylib */; };
 		B74E5BFB19FE9ACA0076F56D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B74E5BFA19FE9ACA0076F56D /* CoreImage.framework */; };
@@ -48,8 +54,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		B74306211A4721B10071271D /* signin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = signin.h; sourceTree = "<group>"; };
 		B74306221A4721B10071271D /* signin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = signin.m; sourceTree = "<group>"; };
+=======
+		191F4BCE1A386C6500166A7C /* ticket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ticket.jpg; path = ../../../../../../ticket.jpg; sourceTree = "<group>"; };
+		191F4BD01A386D6C00166A7C /* tt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tt.jpg; path = ../../../../../../tt.jpg; sourceTree = "<group>"; };
+		19D99F391A374B9C00E31ADC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+>>>>>>> FETCH_HEAD
 		B74E5BF519FE7FB70076F56D /* NewTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTicket.h; sourceTree = "<group>"; };
 		B74E5BF619FE7FB70076F56D /* NewTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTicket.m; sourceTree = "<group>"; };
 		B74E5BF819FE91D10076F56D /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
@@ -94,7 +106,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				B75521761A5D737F00708A74 /* AssetsLibrary.framework in Frameworks */,
+=======
+				19D99F3A1A374B9C00E31ADC /* AssetsLibrary.framework in Frameworks */,
+>>>>>>> FETCH_HEAD
 				B74E5BFB19FE9ACA0076F56D /* CoreImage.framework in Frameworks */,
 				B74E5BF919FE91D10076F56D /* libstdc++.6.0.9.dylib in Frameworks */,
 				B77B68D119FA3C7200170DE3 /* CoreGraphics.framework in Frameworks */,
@@ -139,7 +155,11 @@
 		B77B68CD19FA3C7200170DE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				B75521751A5D737F00708A74 /* AssetsLibrary.framework */,
+=======
+				19D99F391A374B9C00E31ADC /* AssetsLibrary.framework */,
+>>>>>>> FETCH_HEAD
 				B74E5C0419FEA15E0076F56D /* TesseractOCR.framework */,
 				B74E5BFA19FE9ACA0076F56D /* CoreImage.framework */,
 				B74E5BF819FE91D10076F56D /* libstdc++.6.0.9.dylib */,
@@ -181,6 +201,8 @@
 		B77B68D519FA3C7200170DE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				191F4BD01A386D6C00166A7C /* tt.jpg */,
+				191F4BCE1A386C6500166A7C /* ticket.jpg */,
 				B74E5C0C19FEAA2D0076F56D /* img.jpg */,
 				B74E5C0A19FEA6780076F56D /* customer_receipt.jpg */,
 				B74E5C0819FEA3890076F56D /* image_sample.jpg */,
@@ -298,6 +320,8 @@
 				B74E5C0719FEA2C90076F56D /* tessdata in Resources */,
 				B77B68D919FA3C7200170DE3 /* InfoPlist.strings in Resources */,
 				B74E5C0D19FEAA2D0076F56D /* img.jpg in Resources */,
+				191F4BCF1A386C6500166A7C /* ticket.jpg in Resources */,
+				191F4BD11A386D6C00166A7C /* tt.jpg in Resources */,
 				B77B68E219FA3C7200170DE3 /* Main.storyboard in Resources */,
 				B74E5C0B19FEA6780076F56D /* customer_receipt.jpg in Resources */,
 			);

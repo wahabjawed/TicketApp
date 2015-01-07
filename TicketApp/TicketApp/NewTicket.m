@@ -8,6 +8,10 @@
 
 #import "NewTicket.h"
 #import <AssetsLibrary/AssetsLibrary.h>
+<<<<<<< HEAD
+=======
+
+>>>>>>> FETCH_HEAD
 
 @interface NewTicket ()
 
@@ -16,10 +20,16 @@
 @property (weak, nonatomic) IBOutlet UIButton *roundButton;
 @end
 
+<<<<<<< HEAD
 @implementation NewTicket{
     UIImage *uploadedImage;
     NSString* path;
 }
+=======
+@implementation NewTicket
+NSString *imageName;
+
+>>>>>>> FETCH_HEAD
 
 - (void)viewDidLoad
 {
@@ -50,6 +60,30 @@
     [actionSheet showInView:self.view];
 }
 
+<<<<<<< HEAD
+=======
+
+-(void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    NSURL *refURL = [info valueForKey:UIImagePickerControllerReferenceURL];
+    
+    // define the block to call when we get the asset based on the url (below)
+    ALAssetsLibraryAssetForURLResultBlock resultblock = ^(ALAsset *imageAsset)
+    {
+        ALAssetRepresentation *imageRep = [imageAsset defaultRepresentation];
+        NSLog(@"[imageRep filename] : %@", [imageRep filename]);
+        imageName = [imageRep filename];
+        NSLog(@"The image name is: %@", imageName);
+    };
+    
+    // get the asset library and fetch the asset based on the ref url (pass in block above)
+    ALAssetsLibrary* assetslibrary = [[ALAssetsLibrary alloc] init];
+    [assetslibrary assetForURL:refURL resultBlock:resultblock failureBlock:nil];
+    
+    [self TesseractWork];
+    
+}
+>>>>>>> FETCH_HEAD
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
@@ -82,6 +116,7 @@
 //    [self.image setImage:uploadedImage];
 
     
+<<<<<<< HEAD
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     NSString *savedImagePath = [documentsDirectory stringByAppendingPathComponent:@"savedImage.png"];
@@ -104,18 +139,36 @@
 
 -(void)tesseractWork:(NSString *) Imagepath{
     
+=======
+
+}
+-(void)TesseractWork{
+>>>>>>> FETCH_HEAD
     Tesseract* tesseract = [[Tesseract alloc] initWithLanguage:@"eng+ita"];
     tesseract.delegate = self;
     
     // [tesseract setVariableValue:@"0123456789" forKey:@"tessedit_char_whitelist"]; //limit search
     
+<<<<<<< HEAD
     [tesseract setImage:[UIImage imageNamed:Imagepath]]; //image to check
+=======
+    [tesseract setImage:[[UIImage imageNamed:@"tt.jpg"] blackAndWhite]]; //image to check
+>>>>>>> FETCH_HEAD
     //[tesseract setRect:CGRectMake(20, 20, 300, 100)]; //optional: set the rectangle to recognize text in the image
     [tesseract recognize];
     
     NSLog(@"%@", [tesseract recognizedText]);
     
+    NSString * text = [tesseract recognizedText];
+   
+    
+
+    
     tesseract = nil; //deallocate and free all memory
+<<<<<<< HEAD
+=======
+    [self performSegueWithIdentifier:@"go" sender:self];
+>>>>>>> FETCH_HEAD
 }
 
 - (BOOL)shouldCancelImageRecognitionForTesseract:(Tesseract*)tesseract
