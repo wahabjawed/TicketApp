@@ -11,4 +11,5 @@
 
 @interface NewTicket : UIViewController <TesseractDelegate,UIActionSheetDelegate,UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
+
 @end

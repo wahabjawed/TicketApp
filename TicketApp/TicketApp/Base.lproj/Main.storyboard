@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12E4022" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lKZ-SD-SGO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lKZ-SD-SGO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Reveal View Controller-->
@@ -173,7 +174,7 @@
             </objects>
             <point key="canvasLocation" x="252" y="-187"/>
         </scene>
-        <!--Ticket - Tickets-->
+        <!--Tickets-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="Ticket" sceneMemberID="viewController">
@@ -227,7 +228,7 @@
             </objects>
             <point key="canvasLocation" x="757" y="61"/>
         </scene>
-        <!--New Ticket - New Ticket-->
+        <!--New Ticket-->
         <scene sceneID="eKa-fl-GE6">
             <objects>
                 <viewController id="xGv-3I-sY5" customClass="NewTicket" sceneMemberID="viewController">
@@ -274,7 +275,7 @@
             </objects>
             <point key="canvasLocation" x="1246" y="81"/>
         </scene>
-        <!--Select Option - New Ticket-->
+        <!--New Ticket-->
         <scene sceneID="RJ5-TN-ccr">
             <objects>
                 <viewController id="GxU-ZR-p3t" customClass="SelectOption" sceneMemberID="viewController">
@@ -327,7 +328,7 @@ U2VsZWN0IHlvdXIgb3B0aW9uEDo
             </objects>
             <point key="canvasLocation" x="1676" y="81"/>
         </scene>
-        <!--Claim Reason - New Ticket-->
+        <!--New Ticket-->
         <scene sceneID="YvK-ke-6ns">
             <objects>
                 <viewController id="KCL-X3-HJz" customClass="ClaimReason" sceneMemberID="viewController">
@@ -399,6 +400,70 @@ U2VsZWN0IHlvdXIgb3B0aW9uEDo
             </objects>
             <point key="canvasLocation" x="2092" y="81"/>
         </scene>
+        <!--Signin-->
+        <scene sceneID="Gmi-Xi-Rhn">
+            <objects>
+                <viewController id="fW3-4u-5uZ" customClass="signin" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wm9-7k-QG0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ySr-Xz-Wcp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y2N-Xi-i01">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YJU-Oi-UFQ">
+                                <rect key="frame" x="16" y="139" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ksq-iY-BQG">
+                                <rect key="frame" x="76" y="280" width="168" height="30"/>
+                                <color key="backgroundColor" red="0.31556004897685846" green="0.78219696969696972" blue="0.39804595148526228" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFH-Hx-yxH">
+                                <rect key="frame" x="76" y="236" width="168" height="30"/>
+                                <color key="backgroundColor" red="0.30349711792884987" green="0.78219696969696972" blue="0.38287747394054272" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6t-pj-97G">
+                                <rect key="frame" x="54" y="393" width="218" height="52"/>
+                                <state key="normal" title="Button" image="sign-in-with-google">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0c3-o8-zoZ">
+                                <rect key="frame" x="16" y="93" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AF0-Cg-0FD">
+                                <rect key="frame" x="54" y="339" width="218" height="53"/>
+                                <state key="normal" image="facebook">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="password" destination="YJU-Oi-UFQ" id="gIa-YN-HfK"/>
+                        <outlet property="signin" destination="uFH-Hx-yxH" id="mDa-Rd-Z0C"/>
+                        <outlet property="signup" destination="Ksq-iY-BQG" id="q28-pM-rS0"/>
+                        <outlet property="user" destination="0c3-o8-zoZ" id="UvJ-aZ-obP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NCt-at-jKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442" y="81"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zxr-KF-593">
             <objects>
@@ -426,11 +491,13 @@ U2VsZWN0IHlvdXIgb3B0aW9uEDo
         </scene>
     </scenes>
     <resources>
+        <image name="facebook" width="415" height="105"/>
         <image name="flight" width="152" height="170"/>
         <image name="go" width="144" height="160"/>
         <image name="manage" width="152" height="172"/>
         <image name="menu" width="28" height="20"/>
         <image name="pay" width="150" height="171"/>
+        <image name="sign-in-with-google" width="492" height="108"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
